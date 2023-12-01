@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&amp;display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -51,6 +52,7 @@ nav h1 {
 
 @keyframes redify {
     from {}
+
     to {
         background-color: darkred;
     }
@@ -136,6 +138,49 @@ nav h1 {
     float: left;
 }
 
+#store-item-gta6 #vert-cover {
+    width: 40%;
+    float: left;
+}
+
+#store-item-gta6 .textbox {
+    color: white;
+    float: left;
+    width: 55%;
+    margin-left: 40px;
+}
+
+#store-item-gta6 .buy-but {
+    float: left;
+    margin-left: 40px;
+    width: 55%;
+}
+
+#store-item-gta6 #horz-cover {
+    width: 100%;
+}
+
+@media only screen and (max-width:920px) {
+    #store-item-gta6 #vert-cover {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #store-item-gta6 .textbox {
+        color: white;
+        float: left;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #store-item-gta6 .buy-but {
+        float: left;
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
 [id*="store-item-"] {
     display: none;
     margin: 5%
@@ -145,9 +190,11 @@ nav h1 {
     #p3menu {
         width: 100%
     }
+
     #store-item-portal3 .textbox {
         width: 100%;
     }
+
     #store-item-portal3 .buy-but {
         width: 100%;
     }
@@ -157,10 +204,12 @@ nav h1 {
     #store-item-hl3 img {
         width: 90%
     }
+
     #store-item-hl3 .textbox {
         width: 90%;
         color: white;
     }
+
     #store-item-hl3 .buy-but {
         width: 90%;
     }

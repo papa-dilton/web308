@@ -19,6 +19,8 @@ let isAIControlled = true;
 let aiDifficulty = 0.4;
 let wrongCount = 0;
 
+let isDesktopSize = false
+
 function preload() {
   blackFont = loadFont("assets/Black.ttf");
   //boldFont = loadFont('assets/ExtraBold.ttf');
@@ -26,6 +28,7 @@ function preload() {
   wallSound = loadSound("assets/wall");
   hitSound = loadSound("assets/hit");
   scoreSound = loadSound("assets/score");
+  setIsDesktopSize()
 }
 
 function setup() {
@@ -245,8 +248,8 @@ function changeAILevel(selected) {
   console.log(`Difficulty changed to ${(10 - selected) / 10}`);
 }
 
-//make sure window is still sized
-window.onresize = function () {
+
+function setIsDesktopSize () {
   if(window.innerWidth < 650) {
      isDesktopSize = false;
      noLoop();
@@ -255,3 +258,5 @@ window.onresize = function () {
     setup();
   }
 }
+//make sure window is still sized
+window.onresize = setIsDesktopSize()
